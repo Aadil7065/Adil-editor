@@ -1,0 +1,6 @@
+{
+  "name": "EDIT WITH ADIL AI",
+  "description": "Professional AI-Powered Video Editing Software with AI voice commands, multitrack timeline, B-roll generation, 3D captions, and real rendering.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

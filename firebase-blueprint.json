@@ -1,0 +1,50 @@
+{
+  "entities": {
+    "User": {
+      "collection": "users",
+      "fields": {
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "plan": { "type": "string" },
+        "exportsToday": { "type": "number" },
+        "allocatedLimit": { "type": "number" },
+        "isBlocked": { "type": "boolean" },
+        "joinedDate": { "type": "string" },
+        "assignedKeyCode": { "type": "string", "optional": true },
+        "createdAt": { "type": "timestamp", "serverGenerated": true },
+        "updatedAt": { "type": "timestamp", "serverGenerated": true }
+      }
+    },
+    "ActivationKey": {
+      "collection": "activation_keys",
+      "fields": {
+        "code": { "type": "string" },
+        "planType": { "type": "string" },
+        "dailyExportLimit": { "type": "number" },
+        "label": { "type": "string" },
+        "isUsed": { "type": "boolean" },
+        "createdBy": { "type": "string" },
+        "usedBy": { "type": "string", "optional": true },
+        "expiryDuration": { "type": "string" },
+        "createdAt": { "type": "timestamp", "serverGenerated": true },
+        "updatedAt": { "type": "timestamp", "serverGenerated": true }
+      }
+    },
+    "LicenseKey": {
+      "collection": "licenseKeys",
+      "fields": {
+        "key": { "type": "string" },
+        "planType": { "type": "string" },
+        "dailyExportLimit": { "type": "number" },
+        "expiryDate": { "type": "string" },
+        "expiresAt": { "type": "number" },
+        "isUsed": { "type": "boolean" },
+        "usedBy": { "type": "string", "optional": true },
+        "createdBy": { "type": "string" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "timestamp", "serverGenerated": true },
+        "updatedAt": { "type": "timestamp", "serverGenerated": true }
+      }
+    }
+  }
+}
